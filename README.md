@@ -1,88 +1,140 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery Slider</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        .slider {
-            width: 400px;
-            height: 250px;
-            overflow: hidden;
-            position: relative;
-            border: 2px solid #000;
-        }
-        .slider-wrapper {
-            display: flex;
-            width: 1200px; /* 3 resim için genişlik */
-            transition: transform 0.5s ease-in-out;
-        }
-        .slide {
-            width: 400px;
-            height: 250px;
-        }
-        .buttons {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-        .buttons button {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
+🚀 Hugging Face Clone
 
-    <div class="slider">
-        <div class="slider-wrapper">
-            <img src="https://via.placeholder.com/400x250/FF5733/FFFFFF?text=1" class="slide">
-            <img src="https://via.placeholder.com/400x250/33FF57/FFFFFF?text=2" class="slide">
-            <img src="https://via.placeholder.com/400x250/3357FF/FFFFFF?text=3" class="slide">
-        </div>
-        <div class="buttons">
-            <button id="prev">◀</button>
-            <button id="next">▶</button>
-        </div>
-    </div>
 
-    <script>
-        $(document).ready(function(){
-            let currentIndex = 0;
-            const slideWidth = $(".slide").width();
-            const totalSlides = $(".slide").length;
 
-            $("#next").click(function(){
-                if (currentIndex < totalSlides - 1) {
-                    currentIndex++;
-                } else {
-                    currentIndex = 0;
-                }
-                $(".slider-wrapper").css("transform", `translateX(${-currentIndex * slideWidth}px)`);
-            });
+🌟 Overview
 
-            $("#prev").click(function(){
-                if (currentIndex > 0) {
-                    currentIndex--;
-                } else {
-                    currentIndex = totalSlides - 1;
-                }
-                $(".slider-wrapper").css("transform", `translateX(${-currentIndex * slideWidth}px)`);
-            });
+This project is a Hugging Face clone, designed to provide a platform for hosting, sharing, and collaborating on machine learning models, datasets, and AI applications.
 
-            // Otomatik geçiş
-            setInterval(function(){
-                $("#next").click();
-            }, 3000);
-        });
-    </script>
+🔥 Features
 
-</body>
-</html>
+📦 Model Hosting: Upload and share machine learning models.
+
+📊 Dataset Repository: Store and manage datasets.
+
+👤 User Authentication: Sign up, log in, and manage profiles.
+
+⚡ API for Model Inference: Run model predictions via API.
+
+💬 Community Discussions: Engage with AI developers.
+
+🛠 Technologies Used
+
+Technology
+
+Description
+
+Frontend
+
+React, Next.js, Tailwind CSS
+
+Backend
+
+FastAPI / Node.js
+
+Database
+
+PostgreSQL / MongoDB
+
+Storage
+
+AWS S3 / Firebase
+
+Auth
+
+OAuth, JWT
+
+AI Models
+
+Transformers, PyTorch, TensorFlow
+
+📥 Installation
+
+✅ Prerequisites
+
+🖥 Node.js & npm (for frontend & backend)
+
+🐍 Python & pip (for AI-related backend tasks)
+
+🐳 Docker (optional, for containerized setup)
+
+📌 Steps
+
+# 1️⃣ Clone the repository
+ git clone https://github.com/yourusername/huggingface-clone.git
+ cd huggingface-clone
+
+# 2️⃣ Install frontend dependencies
+ cd frontend
+ npm install
+
+# 3️⃣ Install backend dependencies
+ cd ../backend
+ pip install -r requirements.txt
+
+# 4️⃣ Set up environment variables (create `.env` files in `frontend` and `backend` directories).
+
+# 5️⃣ Start the development servers
+
+# Frontend
+cd frontend
+npm run dev
+
+# Backend
+cd ../backend
+uvicorn main:app --reload
+
+📡 API Endpoints
+
+Method
+
+Endpoint
+
+Description
+
+GET
+
+/models
+
+List available models
+
+POST
+
+/models/upload
+
+Upload a new model
+
+GET
+
+/datasets
+
+List available datasets
+
+POST
+
+/datasets/upload
+
+Upload a new dataset
+
+🛠 Contribution Guidelines
+
+Fork the repository.
+
+Create a feature branch.
+
+Commit your changes.
+
+Open a pull request.
+
+💡 Want to contribute? Check out our Contributing Guide!
+
+📜 License
+
+This project is licensed under the MIT License.
+
+📞 Contact
+
+📧 For questions or contributions, reach out to [your email] or open an issue on GitHub.
+
+
+
