@@ -39,8 +39,8 @@ This project is a **Hugging Face** clone, designed to provide a platform for hos
 
 ```bash
 # 1️⃣ Clone the repository
- git clone https://github.com/yourusername/huggingface-clone.git
- cd huggingface-clone
+ git clone https://github.com/HErkanuzun/hugging-face.git
+ cd hugging-face
 
 # 2️⃣ Install frontend dependencies
  cd frontend
