@@ -1,65 +1,43 @@
-🚀 Hugging Face Clone
+# 🚀 Hugging Face Clone
 
 
 
-🌟 Overview
+## 🌟 Overview
 
-This project is a Hugging Face clone, designed to provide a platform for hosting, sharing, and collaborating on machine learning models, datasets, and AI applications.
+This project is a **Hugging Face** clone, designed to provide a platform for hosting, sharing, and collaborating on **machine learning models, datasets, and AI applications**.
 
-🔥 Features
+## 🔥 Features
 
-📦 Model Hosting: Upload and share machine learning models.
+- 📦 **Model Hosting**: Upload and share machine learning models.
+- 📊 **Dataset Repository**: Store and manage datasets.
+- 👤 **User Authentication**: Sign up, log in, and manage profiles.
+- ⚡ **API for Model Inference**: Run model predictions via API.
+- 💬 **Community Discussions**: Engage with AI developers.
 
-📊 Dataset Repository: Store and manage datasets.
+## 🛠 Technologies Used
 
-👤 User Authentication: Sign up, log in, and manage profiles.
+| Technology    | Description                       |
+| ------------- | --------------------------------- |
+| **Frontend**  | React, Next.js, Tailwind CSS      |
+| **Backend**   | FastAPI / Node.js                 |
+| **Database**  | PostgreSQL / MongoDB              |
+| **Storage**   | AWS S3 / Firebase                 |
+| **Auth**      | OAuth, JWT                        |
+| **AI Models** | Transformers, PyTorch, TensorFlow |
 
-⚡ API for Model Inference: Run model predictions via API.
+---
 
-💬 Community Discussions: Engage with AI developers.
+## 📥 Installation
 
-🛠 Technologies Used
+### ✅ Prerequisites
 
-Technology
+- 🖥 **Node.js & npm** (for frontend & backend)
+- 🐍 **Python & pip** (for AI-related backend tasks)
+- 🐳 **Docker** *(optional, for containerized setup)*
 
-Description
+### 📌 Steps
 
-Frontend
-
-React, Next.js, Tailwind CSS
-
-Backend
-
-FastAPI / Node.js
-
-Database
-
-PostgreSQL / MongoDB
-
-Storage
-
-AWS S3 / Firebase
-
-Auth
-
-OAuth, JWT
-
-AI Models
-
-Transformers, PyTorch, TensorFlow
-
-📥 Installation
-
-✅ Prerequisites
-
-🖥 Node.js & npm (for frontend & backend)
-
-🐍 Python & pip (for AI-related backend tasks)
-
-🐳 Docker (optional, for containerized setup)
-
-📌 Steps
-
+```bash
 # 1️⃣ Clone the repository
  git clone https://github.com/yourusername/huggingface-clone.git
  cd huggingface-clone
@@ -83,58 +61,41 @@ npm run dev
 # Backend
 cd ../backend
 uvicorn main:app --reload
+```
 
-📡 API Endpoints
+---
 
-Method
+## 📡 API Endpoints
 
-Endpoint
+| Method   | Endpoint           | Description             |
+| -------- | ------------------ | ----------------------- |
+| **GET**  | `/models`          | List available models   |
+| **POST** | `/models/upload`   | Upload a new model      |
+| **GET**  | `/datasets`        | List available datasets |
+| **POST** | `/datasets/upload` | Upload a new dataset    |
 
-Description
+---
 
-GET
+## 🛠 Contribution Guidelines
 
-/models
+1. **Fork** the repository.
+2. **Create a feature branch**.
+3. **Commit your changes**.
+4. **Open a pull request**.
 
-List available models
+💡 Want to contribute? Check out our [**Contributing Guide**](#)!
 
-POST
+---
 
-/models/upload
+## 📜 License
 
-Upload a new model
+This project is licensed under the **MIT License**.
 
-GET
+---
 
-/datasets
+## 📞 Contact
 
-List available datasets
-
-POST
-
-/datasets/upload
-
-Upload a new dataset
-
-🛠 Contribution Guidelines
-
-Fork the repository.
-
-Create a feature branch.
-
-Commit your changes.
-
-Open a pull request.
-
-💡 Want to contribute? Check out our Contributing Guide!
-
-📜 License
-
-This project is licensed under the MIT License.
-
-📞 Contact
-
-📧 For questions or contributions, reach out to [your email] or open an issue on GitHub.
+📧 For questions or contributions, reach out to **[your email]** or open an [**issue on GitHub**](https://github.com/yourusername/huggingface-clone/issues).
 
 
 
